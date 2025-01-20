@@ -1,212 +1,281 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meals</title>
-    <link rel="stylesheet" href="./src/styles.css">
-    <link rel="stylesheet" href="./public/output.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patrick+Hand&family=Poly:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meals</title>
+  <link rel="stylesheet" href="./src/styles.css">
+  <link rel="stylesheet" href="./public/output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patrick+Hand&family=Poly:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+
+    
 </head>
+
 <body class="bg-[#F2F2F3]">
-    <div class="bg-[#FFAB08] w-[100%] sm: min-w-[320px] pt-6 px-[10px] rounded-b-[80px] lg:min-w-[1440px]" >
-        <div class="text-[#fff] font-semibold text-[24px] flex gap-2 justify-center pb-6">
-            <h3>YourMeal</h3>
-            <img src="./img/Group.svg" alt="">
+
+  <section>
+    <div class="container w-full sm:min-w-[640] bg-[#FFAB08]">
+
+      <div class="text-[24px] font-semibold text-[#FFFFFF] flex gap-2 pt-[30px] justify-center">
+        <h3>YourMeal</h3>
+        <img src="./img/Group.svg" alt="">
+      </div>
+      <div
+        class="font-serif font-extrabold text-[30px] leading-9 text-center lg:text-left flex flex-col gap-4 pt-[14px] px-[10px] pb-[30px] sm:flex-row-reverse  sm:px-[103px] sm:pt-[76px] sm:pb-[44px] lg:justify-center lg:text-[52px] xl:w-full xl:min-w-[1440px]">
+        <div>
+          <h2 class="text-[#FFFFFF] lg:font-extrabold texy-[50px] leading-[60px]">Только самые</h2>
+          <h2 class="text-[#FF5C00] lg:font-extrabold texy-[50px] leading-[60px]">сочные бургеры!</h2>
+          <p class="font-serif font-normal text-[12px] leading-[16.37px] text-[#FFFF] lg:font-semibold lg:text-[16px] lg:leading-[21.82px] mt-[52px]">Бесплатная доставка от 599₽</p>
+        </div>
+        <img class="pb-[30px] w-[227px] h-[229px] self-center lg:w-[326px] lg:h-[326px]" src="./img/pic.svg" alt="">
+      </div>
+
+    </div>
+  </section>
+
+
+  <header class="mt-[30px] mb-[30px]">
+    <div class=" flex sm:flex-row gap-2 px-[10px] sm:px-[64px] sm:gap-6 xl:px-[75px] xl:w-full xl:min-w-[1440px]">
+      <button
+        class=" font-Nunito flex items-center gap-2 h-[30px] rounded-[50px] p-2 bg-[#FFFFFF] text-[12px] font-normal leading-[16.37px] text-[#000000] sm:py-2 px-[14px]"><img
+          src="./img/Бургеры.svg" alt=""><a href="burger">Бургеры</a></button>
+      <button
+        class=" flex items-center gap-2  h-[30px] rounded-[50px] p-2 bg-[#FFFFFF] text-[12px] font-normal leading-[16.37px] text-[#000000]"><img
+          class="w-6 h-6" src="./img/free-icon-onion-2362361.svg" alt=""><a href="sancks">Закуски</a></button>
+      <button
+        class=" flex items-center gap-2  h-[30px] rounded-[50px] p-2 bg-[#FFFFFF] text-[12px] font-normal leading-[16.37px] text-[#000000]"><img
+          src="./img/free-icon-hotdog-sandwich-2362313.svg" alt=""><a href="hot-dog">Хот-доги</a></button>
+      <div class="b flex sm:flex-row gap-2 sm:gap-6">
+        <button
+          class=" button font-Nunito flex items-center gap-2 h-[30px] rounded-[50px] p-2 bg-[#FFFFFF] text-[12px] font-normal leading-[16.37px] text-[#000000] "><img
+            src="./img/fast-food.svg" alt=""><a href="burger"></a>Комбо</button>
+        <button class="buttons flex items-center gap-2  h-[30px] rounded-[50px] p-2 bg-[#FFFFFF] text-[12px] font-normal leading-[16.37px] text-[#000000] "><img class="w-6 h-6" src="./img/shaurma.svg" alt=""><a href="sancks">Шаурма</a></button>
+        <button class="buttons flex items-center gap-2  h-[30px] rounded-[50px] p-2 bg-[#FFFFFF] text-[12px] font-normal leading-[16.37px] text-[#000000] "><img src="./img/pizza.svg" alt=""><a href="hot-dog">Пицца</a></button> 
+        <button class="buttons flex items-center gap-2  h-[30px] rounded-[50px] p-2 bg-[#FFFFFF] text-[12px] font-normal leading-[16.37px] text-[#000000] "><img src="./img/roll.svg" alt=""><a href="hot-dog">Вок</a></button>
+        <button class="buttons flex items-center gap-2  h-[30px] rounded-[50px] p-2 bg-[#FFFFFF] text-[12px] font-normal leading-[16.37px] text-[#000000] "><img src="./img/desert.svg" alt=""><a href="hot-dog">Десерты</a></button> 
+        <button class="buttons flex items-center gap-2  h-[30px] rounded-[50px] p-2 bg-[#FFFFFF] text-[12px] font-normal leading-[16.37px] text-[#000000] "><img src="./img/Соусы.svg" alt=""><a href="hot-dog">Соусы</a></button> 
+      </div>
+      <style>
+      @media (max-width: 1024px) {
+        .button {
+          display: none;
+        }
+        .buttons {
+          display: none;
+        }
+        .burger {
+          display: none;
+        }
+        
+      }
+      
+      @media (max-width: 640px) {
+        .buttons {
+          display: none;
+        }
+
+        .burger {
+          display: none;
+        }
+        
+      }
+      @media (max-width: 320px) {
+        .button {
+          display: none;
+        }
+        
+
+      }
+
+      .b :hover{
+        background-color: #FF7020;
+      }
+      </style>
+    </div>
+  </header>
+
+
+
+
+  <section>
+
+    <div class="flex flex-col gap-[30px] items-start px-[10px] sm:px-[64px] xl:px-[75px] xl:flex-row xl:w-full xl:max-w-[1290px]">
+      <div
+        class="px-[10px] bg-[#FFFF] py-4 rounded-[12px] font-semibold text-[16px] leading-[16px] sm:mt-[70px] sm:w-[300px]">
+        <button>Корзина</button>
+      </div>
+      <div id="burger" class="pb-[80px]">
+        <h2
+          class="mt-[30px] mb-4 text-[28px] leading-[33px] text-[#000000] font-semibold sm:text-[40px] sm:leading-[48px] sm:pb-4">
+          Бургеры</h2>
+        <div class="flex gap-[10px] sm:gap-[30px]">
+          <div class="bg-[#FFFFFF] p-[5px] w-[145px] rounded-[12px] sm:w-[264px] sm:py-3 sm:px-3">
+            <img class="rounded-[8px] w-[137px] h-[120px] sm:w-[276px] sm:h-[220px]" src="./img/photo1.svg" alt="">
+            <p
+              class="font-semibold text-[16px] leading-4 text-[#000000] mt-[10px] mb-[5px] sm:text-[24px] sm:mt-4 sm:mb-2">
+              689₽</p>
+            <p
+              class="font-normal text-[12px] leading-[15px] text-[#000000] mb-4 sm:text-[16px] sm:leading-[20px] sm:mb-[29px]">
+              Мясная бомба</p>
+            <p
+              class="font-semibold text-[12px] leading-[15px] text-[#B1B1B1] mb-[7px] sm:text-[16px] sm:leading-[20px] sm:mb-2">
+              520г</p>
+            <button
+              onclick="showModal()" class="b rounded-[8px] text-center w-[137px] h-[30px] lg:w-[240px] lg:h-[40px]   font-normal text-[12px] leading-3 text-[#000000] bg-[#F2F2F3] justify-center sm:text-[16px] sm:leading-[16px] sm:rounded-[12px]">Добавить</button>
+          </div>
+
+          
+          <div class="bg-[#FFFFFF] p-[5px] w-[145px] rounded-[12px] sm:w-[264px] sm:py-3 sm:px-3">
+            <img class="rounded-[8px] w-[137px] h-[120px] sm:w-[276px] sm:h-[220px]" src="./img/photo1.svg" alt="">
+            <p
+              class="font-semibold text-[16px] leading-4 text-[#000000] mt-[10px] mb-[5px] sm:text-[24px] sm:mt-4 sm:mb-2">
+              689₽</p>
+            <p
+              class="font-normal text-[12px] leading-[15px] text-[#000000] mb-4 sm:text-[16px] sm:leading-[20px] sm:mb-[29px]">
+              Мясная бомба</p>
+            <p
+              class="font-semibold text-[12px] leading-[15px] text-[#B1B1B1] mb-[7px] sm:text-[16px] sm:leading-[20px] sm:mb-2">
+              520г</p>
+            <button
+            onclick="showModal()" class="rounded-[8px] text-center w-[137px] h-[30px] lg:w-[240px] lg:h-[40px] font-normal text-[12px] leading-3 text-[#000000] bg-[#F2F2F3] justify-center sm:text-[16px] sm:leading-[16px] sm:rounded-[12px]">Добавить</button>
+          </div>
+
+          <div class="burger bg-[#FFFFFF] p-[5px] w-[145px] rounded-[12px] sm:w-[264px] sm:p-3">
+            <img class="rounded-[8px] w-[137px] h-[120px] sm:w-[276px] sm:h-[220px]" src="./img/photo1.svg" alt="">
+            <p
+              class="font-semibold text-[16px] leading-4 text-[#000000] mt-[10px] mb-[5px] sm:text-[24px] sm:mt-4 sm:mb-2">
+              689₽</p>
+            <p
+              class="font-normal text-[12px] leading-[15px] text-[#000000] mb-4 sm:text-[16px] sm:leading-[20px] sm:mb-[29px]">
+              Мясная бомба</p>
+            <p
+              class="font-semibold text-[12px] leading-[15px] text-[#B1B1B1] mb-[7px] sm:text-[16px] sm:leading-[20px] sm:mb-2">
+              520г</p>
+            <button
+              class="b rounded-[8px] text-center w-[137px] h-[30px] lg:w-[240px] lg:h-[40px]   font-normal text-[12px] leading-3 text-[#000000] bg-[#F2F2F3] justify-center sm:text-[16px] sm:leading-[16px]">Добавить</button>
+          </div>
         </div>
 
-        <div class="sm: font-serif font-extrabold text-[30px] leading-9 text-center flex flex-col gap-4 lg:flex-row lg:gap-[58px] lg:px-[75px]">
-            <div>
-                <h2 class="text-[#FFFFFF]">Только самые</h2>
-                <h2 class="text-[#FF5C00]">сочные бургеры!</h2>
-                <p class="font-serif font-normal text-[12px] leading-[16.37px] text-[#FFFF]">Бесплатная доставка от 599₽</p>
-            </div>
 
-            <img class="pb-[30px] w-[227px] h-[229px] self-center" src="./img/pic.svg" alt="">
+        <div class="flex gap-[10px] sm:gap-[30px] mt-[10px] sm:mt-[30px]">
+          <div class="bg-[#FFFFFF] p-[5px] w-[145px] rounded-[12px] sm:w-[264px] sm:p-3">
+            <img class="rounded-[8px] w-[137px] h-[120px] sm:w-[276px] sm:h-[220px]" src="./img/photo1.svg" alt="">
+            <p
+              class="font-semibold text-[16px] leading-4 text-[#000000] mt-[10px] mb-[5px] sm:text-[24px] sm:mt-4 sm:mb-2">
+              689₽</p>
+            <p
+              class="font-normal text-[12px] leading-[15px] text-[#000000] mb-4 sm:text-[16px] sm:leading-[20px] sm:mb-[29px]">
+              Мясная бомба</p>
+            <p
+              class="font-semibold text-[12px] leading-[15px] text-[#B1B1B1] mb-[7px]  sm:text-[16px] sm:leading-[20px] sm:mb-2">
+              520г</p>
+            <button
+              class="rounded-[8px] text-center w-[137px] h-[30px] lg:w-[240px] lg:h-[40px]   font-normal text-[12px] leading-3 text-[#000000] bg-[#F2F2F3] justify-center sm:text-[16px] sm:leading-[16px]">Добавить</button>
+          </div>
+
+          <div class="bg-[#FFFFFF] p-[5px] w-[145px] rounded-[12px] sm:w-[264px] sm:p-3">
+            <img class="rounded-[8px] w-[137px] h-[120px] sm:w-[276px] sm:h-[220px]" src="./img/photo1.svg" alt="">
+            <p
+              class="font-semibold text-[16px] leading-4 text-[#000000] mt-[10px] mb-[5px] sm:text-[24px] sm:mt-4 sm:mb-2">
+              689₽</p>
+            <p
+              class="font-normal text-[12px] leading-[15px] text-[#000000] mb-4 sm:text-[16px] sm:leading-[20px] sm:mb-[29px]">
+              Мясная бомба</p>
+            <p
+              class="font-semibold text-[12px] leading-[15px] text-[#B1B1B1] mb-[7px]  sm:text-[16px] sm:leading-[20px] sm:mb-2">
+              520г</p>
+            <button
+              class="rounded-[8px] text-center w-[137px] h-[30px] lg:w-[240px] lg:h-[40px]   font-normal text-[12px] leading-3 text-[#000000] bg-[#F2F2F3] justify-center sm:text-[16px] sm:leading-[16px]">Добавить</button>
+          </div>
+
+          <div class="burger bg-[#FFFFFF] p-[5px] w-[145px] rounded-[12px] sm:w-[264px] sm:p-3 sm:">
+            <img class="rounded-[8px] w-[137px] h-[120px] sm:w-[276px] sm:h-[220px]" src="./img/photo1.svg" alt="">
+            <p
+              class="font-semibold text-[16px] leading-4 text-[#000000] mt-[10px] mb-[5px] sm:text-[24px] sm:mt-4 sm:mb-2">
+              689₽</p>
+            <p
+              class="font-normal text-[12px] leading-[15px] text-[#000000] mb-4 sm:text-[16px] sm:leading-[20px] sm:mb-[29px]">
+              Мясная бомба</p>
+            <p
+              class="font-semibold text-[12px] leading-[15px] text-[#B1B1B1] mb-[7px]  sm:text-[16px] sm:leading-[20px] sm:mb-2">
+              520г</p>
+            <button
+              class="rounded-[8px] text-center w-[137px] h-[30px] lg:w-[240px] lg:h-[40px]  font-normal text-[12px] leading-3 text-[#000000] bg-[#F2F2F3] justify-center sm:text-[16px] sm:leading-[16px]">Добавить</button>
+          </div>
         </div>
+      </div>
     </div>
 
-    <!-- <div class="px-[10px] md:px-[32px]"> -->
-        <header class="mt-[30px] mb-[30px] px-[75px]">
-            <div class="flex lg:gap-6 w-full lg:max-w-[1440px]">
-                <button class="font-Nunito flex items-center gap-2 w-[97px] h-[30px] rounded-[50px] p-2 bg-[#FFFFFF] text-[12px] font-normal leading-[16.37px] text-[#000000]"><img src="./img/Бургеры.svg" alt=""><a href="burger">Бургеры</a></button>
-                <button class="flex items-center gap-2 w-[97px] h-[30px] rounded-[50px] p-2 bg-[#FFFFFF] text-[12px] font-normal leading-[16.37px] text-[#000000]"><img src="./img/free-icon-onion-2362361.svg" alt=""><a href="sancks">Закуски</a></button>
-                <button class="flex items-center gap-2 w-[97px] h-[30px] rounded-[50px] p-2 bg-[#FFFFFF] text-[12px] font-normal leading-[16.37px] text-[#000000]"><img src="./img/free-icon-hotdog-sandwich-2362313.svg" alt=""><a href="hot-dog">Хот-доги</a></button>
+  </section>
 
-                <div class="flex lg:gap-6">
-                    <button class="font-Nunito flex items-center gap-2 w-[97px] h-[30px] rounded-[50px] p-2 bg-[#FFFFFF] text-[12px] font-normal leading-[16.37px] text-[#000000]"><img src="./img/fast-food.svg" alt=""><a href="burger">Комбо</a></button>
-                <button class="flex items-center gap-2 w-[97px] h-[30px] rounded-[50px] p-2 bg-[#FFFFFF] text-[12px] font-normal leading-[16.37px] text-[#000000]"><img src="./img/shaurma.svg" alt=""><a href="sancks">Шаурма</a></button>
-                <button class="flex items-center gap-2 w-[97px] h-[30px] rounded-[50px] p-2 bg-[#FFFFFF] text-[12px] font-normal leading-[16.37px] text-[#000000]"><img src="./img/pizza.svg" alt=""><a href="hot-dog">Пицца</a></button>
-                <button class="flex items-center gap-2 w-[97px] h-[30px] rounded-[50px] p-2 bg-[#FFFFFF] text-[12px] font-normal leading-[16.37px] text-[#000000]"><img src="./img/roll.svg" alt=""><a href="hot-dog">Вок</a></button>
-                <button class="flex items-center gap-2 w-[97px] h-[30px] rounded-[50px] p-2 bg-[#FFFFFF] text-[12px] font-normal leading-[16.37px] text-[#000000]"><img src="./img/desert.svg" alt=""><a href="hot-dog">Десерты</a></button>
-                <button class="flex items-center gap-2 w-[97px] h-[30px] rounded-[50px] p-2 bg-[#FFFFFF] text-[12px] font-normal leading-[16.37px] text-[#000000]"><img src="./img/Соусы.svg" alt=""><a href="hot-dog">Соусы</a></button>
-                
-                </div>
-            </div>
-        </header>
-
-        <div class="flex gap-[30px] lg:px-[75px]">
-            <div>
-                <button class="my-[30px] w-[300px] rounded-[12px] bg-[#FFFF] text-[#000000] text-[16px] font-semibold leading-4 px-[10px] py-4 text-start">Корзина</button>
-            </div>
-
-
-            <div id="burger" class="pb-[80px] sm:px-[10px] lg:px-[75px]">
-                <h2 class="mt-[30px] mb-4">Бургеры</h2>
-                <div class="flex gap-[30px]">
-                    <div class="bg-[#FFFFFF] p-[5px] w-[145px] lg:w-[300px] lg:p-[12px] rounded-[12px] lg:rounded-[18px]">
-                        <img class="rounded-[8px] w-[137px] h-[120px] lg:w-[276px] lg:h-[220px]" src="./img/photo1.svg" alt="">
-                        <p class="font-semibold text-[16px] leading-4 text-[#000000] mt-[10px] mb-[5px]" >689₽</p>
-                        <p class="font-normal text-[12px] leading-[15px] text-[#000000] mb-4">Мясная бомба</p>
-                        <p class="font-semibold text-[12px] leading-[15px] text-[#B1B1B1] mb-[7px]">520г</p>
-                        <button class="w-[137px] rounded-[8px] py-[11px]  font-normal text-[12px] leading-3 text-[#000000] bg-[#F2F2F3] justify-center">Добавить</button>
-                    </div>
-
-                    <div class="bg-[#FFFFFF] p-[5px] w-[145px] lg:w-[300px] lg:p-[12px] rounded-[12px] lg:rounded-[18px]">
-                        <img class="rounded-[8px] lg:w-[276px] lg:h-[220px]" src="./img/photo1.svg" alt="">
-                        <p class="font-semibold text-[16px] leading-4 text-[#000000] mt-[10px] mb-[5px]" >689₽</p>
-                        <p class="font-normal text-[12px] leading-[15px] text-[#000000] mb-4">Мясная бомба</p>
-                        <p class="font-semibold text-[12px] leading-[15px] text-[#B1B1B1] mb-[7px]">520г</p>
-                        <button class="w-[137px] rounded-[8px] py-[11px]  font-normal text-[12px] leading-3 text-[#000000] bg-[#F2F2F3] justify-center">Добавить</button>
-                    </div >
-
-                    <div class="bg-[#FFFFFF] p-[5px] w-[145px] lg:w-[300px] lg:p-[12px] rounded-[12px] lg:rounded-[18px]">
-                        <img class="rounded-[8px] lg:w-[276px] lg:h-[220px]" src="./img/photo1.svg" alt="">
-                        <p class="font-semibold text-[16px] leading-4 text-[#000000] mt-[10px] mb-[5px]" >689₽</p>
-                        <p class="font-normal text-[12px] leading-[15px] text-[#000000] mb-4">Мясная бомба</p>
-                        <p class="font-semibold text-[12px] leading-[15px] text-[#B1B1B1] mb-[7px]">520г</p>
-                        <button class="w-[137px] rounded-[8px] py-[11px]  font-normal text-[12px] leading-3 text-[#000000] bg-[#F2F2F3] justify-center">Добавить</button>
-                    </div >
-                </div>
-
-                <div class="flex gap-[30px] mt-[10px]">
-                    <div class="bg-[#FFFFFF] p-[5px] w-[145px] lg:w-[300px] lg:p-[12px] rounded-[12px] lg:rounded-[18px]">
-                        <img class="rounded-[8px] lg:w-[276px] lg:h-[220px]" src="./img/photo1.svg" alt="" >
-                        <p class="font-semibold text-[16px] leading-4 text-[#000000] mt-[10px] mb-[5px]" >689₽</p>
-                        <p class="font-normal text-[12px] leading-[15px] text-[#000000] mb-4">Мясная бомба</p>
-                        <p class="font-semibold text-[12px] leading-[15px] text-[#B1B1B1] mb-[7px]">520г</p>
-                        <button class="w-[137px] rounded-[8px] py-[11px]  font-normal text-[12px] leading-3 text-[#000000] bg-[#F2F2F3] justify-center">Добавить</button>
-                    </div>
-
-                    <div class="bg-[#FFFFFF] p-[5px] w-[145px] lg:w-[300px] lg:p-[12px] rounded-[12px] lg:rounded-[18px]">
-                        <img class="rounded-[8px] lg:w-[276px] lg:h-[220px]" src="./img/photo1.svg" alt="" >
-                        <p class="font-semibold text-[16px] leading-4 text-[#000000] mt-[10px] mb-[5px]" >689₽</p>
-                        <p class="font-normal text-[12px] leading-[15px] text-[#000000] mb-4">Мясная бомба</p>
-                        <p class="font-semibold text-[12px] leading-[15px] text-[#B1B1B1] mb-[7px]">520г</p>
-                        <button class="w-[137px] rounded-[8px] py-[11px]  font-normal text-[12px] leading-3 text-[#000000] bg-[#F2F2F3] justify-center">Добавить</button>
-                    </div>
-
-                    <div class="bg-[#FFFFFF] p-[5px] w-[145px] lg:w-[300px] lg:p-[12px] rounded-[12px] lg:rounded-[18px]">
-                        <img class="rounded-[8px] lg:w-[276px] lg:h-[220px]" src="./img/photo1.svg" alt="" >
-                        <p class="font-semibold text-[16px] leading-4 text-[#000000] mt-[10px] mb-[5px]" >689₽</p>
-                        <p class="font-normal text-[12px] leading-[15px] text-[#000000] mb-4">Мясная бомба</p>
-                        <p class="font-semibold text-[12px] leading-[15px] text-[#B1B1B1] mb-[7px]">520г</p>
-                        <button class="w-[137px] rounded-[8px] py-[11px]  font-normal text-[12px] leading-3 text-[#000000] bg-[#F2F2F3] justify-center">Добавить</button>
-                    </div>
-                </div>
-            </div>
-
+  <footer class="bg-[#FFFFFF] text-[#000000] py-8 px-4 mt-8">
+    <div class="max-w-7xl  flex flex-col  gap-6 px-[10px] sm:px-[64px] sm:flex-row justify-between items-center lg:px-[75px]">
+      <div>
+        <div class="flex gap-2">
+          <h2 class="font-extrabold text-[#FF7020] text-[22px] sm:text-[42px]">YourMeal</h2>
+          <img src="./img/free-icon-kitchen-utensil-4790616 1.svg" alt=""
+            class="w-[43px] h-[43px]sm:w-[66.91px] sm:h-[66.59px]">
         </div>
+        <div class="mt-9 mb-[52px]">
+          <h3 class="font-bold">Номер для заказа</h3>
+          <p class="flex items-center gap-2"><img src="Vector.png" alt=""> +(930)833-38-11</p>
+        </div>
+        <p>&copy;YourMeal 2025<br>Design: Anastisia Ilina</p>
+      </div>
+        <div>
+          <h3 class="font-normal  text-[18px] leading-[18px]">Мы в соцсетях</h3>
+          <div class="flex space-x-4 mt-2">
+            <img src="./img/entypo-social_vk-with-circle.svg" alt="telegram">
+            <img src="./img/bi_telegram.svg" alt="twitter">
+          </div>
+        </div>
+    </div>
+  </footer>
 
 
-        <!-- <div id="snacks" class="mb-[80px] sm:px-[10px] lg:px-[75px]">
-            <h2 class="mt-[30px] mb-4">Закуски</h2>
-            <div class="flex gap-[10px]">
-                <div class="bg-[#FFFFFF] p-[5px] w-[145px] rounded-[12px]">
-                    <img class="rounded-[8px]" src="./img/photo5.svg" alt="" width="245px" height="220px">
-                    <p class="font-semibold text-[16px] leading-4 text-[#000000] mt-[10px] mb-[5px]" >245₽</p>
-                    <p class="font-normal text-[12px] leading-[15px] text-[#000000] mb-4">Картошка фри</p>
-                    <p class="font-semibold text-[12px] leading-[15px] text-[#B1B1B1] mb-[7px]">180г</p>
-                    <button class="w-[137px] rounded-[8px] py-[11px]  font-normal text-[12px] leading-3 text-[#000000] bg-[#F2F2F3] justify-center">Добавить</button>
-                </div>
 
-                <div class="bg-[#FFFFFF] p-[5px] w-[145px] rounded-[12px]">
-                    <img class="rounded-[8px]" src="./img/photo6.svg" alt="" width="245px" height="220px">
-                    <p class="font-semibold text-[16px] leading-4 text-[#000000] mt-[10px] mb-[5px]" >245₽</p>
-                    <p class="font-normal text-[12px] leading-[15px] text-[#000000] mb-4">Картошка фри</p>
-                    <p class="font-semibold text-[12px] leading-[15px] text-[#B1B1B1] mb-[7px]">180г</p>
-                    <button class="w-[137px] rounded-[8px] py-[11px]  font-normal text-[12px] leading-3 text-[#000000] bg-[#F2F2F3] justify-center">Добавить</button>
-                </div>
-            </div>
 
-            <div class="flex gap-[10px] mt-[10px]">
-                <div class="bg-[#FFFFFF] p-[5px] w-[145px] rounded-[12px]">
-                    <img class="rounded-[8px]" src="./img/photo7.svg" alt="" width="276px" height="220px">
-                    <p class="font-semibold text-[16px] leading-4 text-[#000000] mt-[10px] mb-[5px]" >230₽</p>
-                    <p class="font-normal text-[12px] leading-[15px] text-[#000000] mb-4">Луковые кольца</p>
-                    <p class="font-semibold text-[12px] leading-[15px] text-[#B1B1B1] mb-[7px]">160г</p>
-                    <button class="w-[137px] rounded-[8px] py-[11px]  font-normal text-[12px] leading-3 text-[#000000] bg-[#F2F2F3] justify-center">Добавить</button>
-                </div>
-            </div>
-        </div> -->
+  <div id="burger" class="hidden fixed inset-0 bg-slate-950/65  items-center justify-center">
+    <div class="w-[654px] h-[432px] bg-[#FFFFFF] p-6 rounded-[24px]">
+      <div class="flex items-center justify-between">
+        <h2 class="font-semibold text-[24px] leading-[48px] mb-6">Мясная бомба</h2>
+        <button id="add" class="text-[20px] text-[#B1B1B1] pb-[40px]">X</button>
+      </div>
+      
+      <main>
+        <div class="flex fl gap-4">
+          <img src="./img/photo1.svg" alt="" class="w-[276px] h-[220px]">
+          <div class="flex flex-col">
+            <p class="font-normal text-[16px] leading-5 text-[#000000]">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</p>
+            <p class="font-normal text-[12px] leading-[15.6px] text-[#000000]"> <br> <span class="font-semibold text-[12px] leading-[15.6px] text-[#000000] mt-[10px] mb-[5px]">Состав:</span> <br> Котлета из говядины <br> Красный лук <br> Листья салата <br> Соус горчичный <br> Соус горчичный</p>
+            <p class="font-normal text-[12px] leading-[15.6px] text-[#B1B1B1]">520г, ккал 430</p>
+          </div>
+          
 
-        <!-- <div id="hot-dog" class="mb-[80px] sm:px-[10px] md:px-[32px]">
-            <h2 class="mt-[30px] mb-4">Хот-доги</h2>
-            <div class="flex gap-[10px]">
-                <div class="bg-[#FFFFFF] p-[5px] w-[145px] rounded-[12px]">
-                    <img class="rounded-[8px]" src="./img/photo8.svg" alt="" width="245px" height="220px">
-                    <p class="font-semibold text-[16px] leading-4 text-[#000000] mt-[10px] mb-[5px]" >245₽</p>
-                    <p class="font-normal text-[12px] leading-[15px] text-[#000000] mb-4">Картошка фри</p>
-                    <p class="font-semibold text-[12px] leading-[15px] text-[#B1B1B1] mb-[7px]">180г</p>
-                    <button class="w-[137px] rounded-[8px] py-[11px]  font-normal text-[12px] leading-3 text-[#000000] bg-[#F2F2F3] justify-center">Добавить</button>
-                </div>
-
-                <div class="bg-[#FFFFFF] p-[5px] w-[145px] rounded-[12px]">
-                    <img class="rounded-[8px]" src="./img/photo9.svg" alt="" width="245px" height="220px">
-                    <p class="font-semibold text-[16px] leading-4 text-[#000000] mt-[10px] mb-[5px]" >245₽</p>
-                    <p class="font-normal text-[12px] leading-[15px] text-[#000000] mb-4">Картошка фри</p>
-                    <p class="font-semibold text-[12px] leading-[15px] text-[#B1B1B1] mb-[7px]">180г</p>
-                    <button class="w-[137px] rounded-[8px] py-[11px]  font-normal text-[12px] leading-3 text-[#000000] bg-[#F2F2F3] justify-center">Добавить</button>
-                </div>
-            </div>
-                <div class="bg-[#FFFFFF] p-[5px] w-[145px] rounded-[12px]">
-                    <img class="rounded-[8px]" src="./img/photo10.svg" alt="" width="276px" height="220px">
-                    <p class="font-semibold text-[16px] leading-4 text-[#000000] mt-[10px] mb-[5px]" >230₽</p>
-                    <p class="font-normal text-[12px] leading-[15px] text-[#000000] mb-4">Луковые кольца</p>
-                    <p class="font-semibold text-[12px] leading-[15px] text-[#B1B1B1] mb-[7px]">160г</p>
-                    <button class="w-[137px] rounded-[8px] py-[11px]  font-normal text-[12px] leading-3 text-[#000000] bg-[#F2F2F3] justify-center">Добавить</button>
-                </div>
-    
+          <div>
             
-
-        </div> -->
-
-    <!-- </div>     -->
-    <footer>
-        <div class="w-full max-w-[320px] h-[318px] lg:max-w-[1440px] lg:flex-row">
-            <div class="bg-[#FFFFFF] pt-[24px] pb-[26px] px-[10px] ">
-                <div class=" flex gap-[6px] items-center">
-                    <h1 class="text-[#FF7020] font-extrabold text-[34px] ">YourMeal</h1>
-                    <img src="./img/free-icon-kitchen-utensil-4790616 1.svg" alt="" width="43.71px" height="43.63px">
-                </div>
-
-                <div class="mt-6 mb-6">
-                    <h3 class="font-normal text-[18px] leading-[18px] text-[#000000]">Номер для заказа</h3>
-                    <div class="flex items-center mt-[5px]">
-                        <i class="fa-solid fa-phone"></i>
-                        <p>+7(930)833-38-11</p>
-                    </div>
-
-                </div>
-
-                <div class="mb-[34px]">
-                    <h3>Мы в соцсетях</h3>
-                    <div class="flex gap-4 mt-6 mb-6" >
-                        <i class="fa-brands fa-instagram bg-[#FF7020] text-[#FFFFFF] w-9 h-9 rounded-full text-center justify-center"></i>
-                        <i class="fa-solid fa-paper-plane bg-[#FF7020] text-[#FFFFFF] w-9 h-9 rounded-full text-center mt-0"></i>
-                    </div>
-
-                    <div class="">
-                        <h4 class="font-normal text-[21px] leading-[16.37px] text-[#00000] mb-[24px]">&copy; YouMeal, 2022</h4>
-                        <h4 class="font-normal text-[21px] leading-[16.37px] text-[#00000]">Design: Anastasia Ilina</h4>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </footer>
+        
+        
+        <div>
+          <button class="py-[11px] px-[32px] rounded-[12px] bg-[#FF7020] text-[#FFFFFF] w-[276px] h-[40px] self-center mt-10">Добавить</button>
+          <button class="w-[84px] h-[40px] rounded-[12px] bg-[#F2F2F3] ml-4">- 1 +</button>
+        </div>
+      </main>
+    </div>
+  </div>
 
+  <script src="./main.js"></script>
 </body>
+
 </html>
